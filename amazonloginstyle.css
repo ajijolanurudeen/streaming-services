@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+}
+a{
+    text-decoration: none;
+}
+header img{
+    display: block;
+    margin: auto;
+    /* border: 1px solid red; */
+    padding: 2%;
+}
+form{
+ width:30vw;
+ padding: 20px;
+ margin: auto;
+ border: 1px solid rgb(82, 77, 0.5);
+ margin-bottom: 30px;
+}
+form h1{
+    font-weight: 300;
+    font-size: 28px;
+}
+label{
+    font-size: 13px;
+    font-weight: 800;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+input{
+    padding: 7px;
+}
+.sign-in-btn{
+    margin: 10px 0;
+    width: 100%;
+    padding: 8px ;
+    border: 2px;
+    background-color: #f0c14b;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.p-small{
+    font-size: 14px; 
+}
+.input-checkbox{
+    display: flex;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 20px 0;
+}
+.input-checkbox a{
+    margin-left: 30px;
+}
+.input-checkbox input{
+    margin-right: 10px;
+}
+.gray-text{
+    font-size:14px;
+    color: rgb(49, 47, 47);
+    text-align: center;
+}
+.create-btn{
+    margin: 10px 0;
+    width: 100%;
+    padding: 8px ;
+    border: 2px;
+    background-color:#e7e9ec;;
+    border-radius: 3px;
+    font-size: 14px;
+}
+footer{
+    background-color:#e7e9ec ;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.links{
+    padding: 10px 0;
+    margin: auto;
+    width: 30vw;
+    font-size:14px;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 690px){
+    form{
+        width: 90vw;
+    }
+    .links{
+        width: 90vw;
+    }
+}
