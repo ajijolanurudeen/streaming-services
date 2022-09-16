@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+}
+body{
+    font-family: 'roboto';
+    padding: 0 30px;
+}
+header{
+    background-image: url(./images/cropped-1920-1080-1185634.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    /* width: 100vw; */
+    height: 60vh;
+    color: white;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px;
+}
+.siteName{
+    font-family:  'Cinzel Decorative'; 
+    font-size: 4vw;
+}
+nav{
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navItems{
+   
+    width: 60%;
+    display: flex;
+   
+}
+
+.navItems ul{
+    font-size: 1.2vw;
+    /* font-size: clamp(0.5rem, 5font-size: clamp(1rem, 10vw, 2rem); vw, 1rem);  */
+    font-weight: 300;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    list-style: none; 
+    justify-content: space-between;
+}
+.headerTexts{
+    padding: 3% 3%;
+}
+.headerTexts h2{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+.headerTexts h1{
+    font-size: 3.5vw;
+    font-weight: 300;
+}
+.headerTexts p{
+    font-size: 1vw;
+}
+.headerButton{
+        margin-top: 3vh;
+        cursor: pointer;
+        border: 3px solid #cfaeae;
+        background-color: transparent;
+        height: 8vh;
+        width: 15.625vw;
+        border-radius: 20px;
+        color: #dce5eb;
+        font-size: 2vh;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    
+}
+.headerButton:hover{
+    height:8.4vh ;
+    width: 16vw;
+}
+
+main{
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 20px 0;
+    /* border: 1px solid red; */
+}
+.about-div{
+    /* border: 1px solid red; */
+    display: grid;
+    width: 50vw;
+}
+.about-div h1{
+    font-size: 3.5vw;
+    font-weight: 300;
+}
+.about-div p{
+    font: 2vw;
+    font-weight: 100;
+    padding: 10px 0;
+}
+.spanName{
+    font-family:'Cinzel Decorative' ;
+}
+.suscribe-btn{
+    cursor: pointer;
+    border: 3px solid #b80606;
+    background-color:rgb(134, 4, 4) ;
+    height: 9vh;
+    width: 16.625vw;
+    border-radius: 14px;
+    color: #dce5eb;
+    font-size: 2vh;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+.suscribe-btn:hover{
+    height: 9.5vh;
+    width: 17vw;
+}
+
+.services-div{
+    display: grid;
+    padding: 10px 10px;
+    grid-template-columns: repeat(2,auto);
+    grid-gap: 16vh;
+}
+
+.services-img{
+    height: 20vh;
+    width: 15vw;
+}
+
+img{
+   height:100% ; 
+   width: 100%;
+}
+
+.services-img:hover{
+    height: 20.5vh;
+    width: 15.5vw;
+}
+
+
+
+footer{
+    background-color: rgb(18, 18, 20);
+    border-top: 0.7vh solid rgb(42, 42, 43);
+    padding: 10vh 10vw;
+    display: grid;
+    row-gap: 5vh;
+}
+
+footer ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 4vh;
+}
+
+a, footer p{
+    text-decoration: none;
+    color: rgb(227, 227, 231);
+    font-size: max(1.1vw, 12px);
+    z-index: 2;
+
+}
+
+footer a:hover{
+    border-bottom: 1px solid rgb(78, 75, 75);
+}
+
+.navItems ul li a:hover{
+    font-size: 1.3vw;
+
+}
+@media screen and (max-width:700px) {
+    .navItems ul li a{
+        font-size: max(12px,1.3vw);
+    /* font-size: 1.2vw; */
+}
+    body{
+        padding: 0;
+    }
+    header{
+        height: 30vh;
+    }
+    .headerTexts{
+        padding: 8% 3%;
+    }
+    .headerButton{
+        margin-top: 3vh;
+        cursor: pointer;
+        border: 3px solid #cfaeae;
+        background-color: transparent;
+        height: 3vh;
+        width: 28.625vw;
+        border-radius: 20px;
+        color: #dce5eb;
+        font-size: 1.5vh;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    
+}
+.headerButton:hover{
+    height:3.4vh ;
+    width: 29vw;
+}
+
+.navItems ul :hover{
+    font-size: 1.1vw;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* border: 1px solid red; */
+    text-align: center;
+
+}
+.about-div{
+    /* border: 1px solid red; */
+    display: grid;
+    width: 70vw;
+    margin: auto;
+}
+.about-div h1{
+    font-size: 5.5vw;
+    font-weight: 300;
+}
+.about-div p{
+    font: 3vw;
+    font-weight: 100;
+}
+.suscribe-btn{
+    height: 6vh;
+    width: 26.625vw;
+    margin: auto;
+}
+.suscribe-btn:hover{
+    height: 6.5vh;
+    width: 26.9vw;
+}
+.services-img{
+    height: 100%;
+    width: 100%;
+}
+}
