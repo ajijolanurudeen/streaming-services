@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* General CSS */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+.header-one, .login-body{
+    background-image: url(./images/netflix/header_bg.jpg);
+}
+header{
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: grid;
+    align-content: space-between;
+}
+
+.header-one, .login-body, .help-page, .find-account-page{
+    position: relative;
+    background-size: cover;
+}
+.header-one::after, .login-body::after,  .help-page::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(180deg, rgba(3, 1, 12, 0.63) 70%, rgba(6, 5, 4, 0.89) 82%);
+  
+}
+
+header a:hover{
+    border: none !important;
+}
+
+/* Landing page start*/
+/* NB: some styles are for more than one page*/
+
+.header-container{
+    position: relative;
+    padding: min(4vh, 30px) 0px min(20vh, 200px) 0px;
+    margin: auto;
+    display: flex;
+    width: 90vw;
+    z-index: 2;
+    justify-content: space-between;
+    max-height: 50px;
+}
+
+.header-image{
+    max-width: 120px;
+    max-height: 30px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+.header-btn button{
+    width: 7vw;
+    height: inherit;
+    padding: 0.5vw;
+    font-size: large;
+    font-weight: 400;
+    border-radius: 0.3vw;
+    border: none;
+}
+
+
+
+.header-texts{
+    position: relative;
+    z-index: 2;
+    color: #ffff;
+    margin: auto;
+    width: max(275px, 50vw);
+    text-align: center;
+    padding: min(4vh, 30px) 0px min(15vh, 100px) 0px;
+    display: grid;
+    row-gap: 6vh;
+}
+
+h1{
+    font-size: max(4vw, 28px);
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+
+p{
+    font-size: max(2vw, 18px); 
+    z-index: 2;
+
+}
+
+
+form p{
+    font-size: max(1.45vw, 18px); 
+    margin-bottom: 1vh;
+}
+
+.signup-email{
+    /* width: min(500px, 65%) clamp( 280px, 450px, 90%); */
+        width: clamp( 280px, 450px, 100%);
+
+    height: clamp(20px, 4vw, 90px);
+    
+    
+}
+
+.signup-submit{
+    width: fit-content;
+    height: clamp(30px, 4.5vw, 90px);
+    background-color: red;
+    color: #ffff;
+    font-weight: 700;
+    font-size: max(1.6vw, 12px);
+    position: relative;
+    top: 1vh;
+    padding: 1vw 1vw 0.6vw 1vw;
+}
+
+.section-one, .section-two, .section-three, .section-four{
+    width: inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4vh 5vw;
+    border-top: 0.7vh solid rgb(42, 42, 43);
+    border-bottom: 0.7vh solid rgb(42, 42, 43);
+    background-color: rgb(1, 1, 13);
+    align-content: center;
+    color: #ffff;
+}
+
+.section-one{
+    border-top: 1.3vh solid rgb(42, 42, 43);
+
+}
+
+.section-texts, .section-image{
+    margin: auto;
+    padding: 1vw;
+    position: relative;
+}
+
+.image-gif::before{
+    background-image: url(./images/netflix/netflixgif.webp);
+    background-repeat: no-repeat;
+    left: 0px;
+    content: "";
+    position: absolute;
+    top: 22%;
+    right: 0px;
+    bottom: 0px;
+    left: 6.42vw;
+    max-width: 70%;
+    max-height: 50%;
+}
+
+.section-five {
+    background-color: rgb(1, 1, 13);
+    color: #ffff;
+    display: grid;
+    row-gap: 7vh;
+    border-top: 0.7vh solid rgb(42, 42, 43);
+    border-bottom: 0.7vh solid rgb(42, 42, 43);
+    padding: 4vh 5vw;
+}
+
+.section-five h1{
+    text-align: center;
+}
+
+.fag-paragraph p{
+    margin: auto;
+    max-width: 800px;
+    padding: 3vh;
+    margin-top: 2vh;
+    background-color: rgb(42, 42, 43);
+}
+
+.fag-paragraph p:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.fag-form {
+    margin: auto;
+    width: clamp( 280px, 650px, 100%);
+
+}
+
+footer{
+    background-color: rgb(1, 1, 13);
+    border-top: 0.7vh solid rgb(42, 42, 43);
+    padding: 10vh 10vw;
+    display: grid;
+    row-gap: 5vh;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 4vh;
+}
+
+a, footer p{
+    text-decoration: none;
+    color: rgb(124, 124, 126);
+    font-size: max(1.1vw, 12px);
+    z-index: 2;
+
+}
+
+footer a:hover{
+    border-bottom: 1px solid rgb(78, 75, 75);
+}
+
+/* Login page start*/
+/* NB: some styles are for more than one page*/
+
+
+.login-body{
+    position: relative;
+    color: #ffff;
+}
+
+
+.login-header .header-container, .help-page .header-container, .find-account-page .header-container{ 
+    padding: 1vw 0px 4vw 0px;
+}
+
+.login-header .header-image, .header-two .header-image{
+    max-height: 80px;
+    max-width: 180px;
+}
+
+.login-main{
+    position: relative;
+    z-index: 2;
+    width: clamp(min(280px, 100vw), 26vw, 600px);
+    background-color: rgb(1, 1, 13, 0.7);
+    padding: 5vw;
+    margin:auto;
+    margin-bottom: 6vw;
+}
+
+.login-main h1{
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.login-body form {
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100%;
+    height: fit-content;
+}
+
+.login-body form input{
+    border: none;
+    height: clamp(50px, 5vw, 80px);
+    border-radius: 0.4vw;
+    background-color: rgb(78, 75, 75);
+    padding: 0px 2vw;
+}
+
+button, .login-btn, .signup-submit{
+    background-color: red;
+    color: #ffff;
+    cursor: pointer;
+    
+}
+
+.signup-submit:hover, .login-btn:hover, .signup-btn:hover, button:hover{
+    background-color: rgb(177, 17, 17);
+    border-radius: 0.6vw;
+}
+
+
+.login-btn{
+    height: clamp(50px, 5vw, 80px);
+    font-size: large;
+    font-weight: 600;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.remember-help-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6vw;
+}
+
+a:hover{
+    border-bottom: 1px solid #ffff;
+}
+
+.sign-up{
+    color: #ffff;
+}
+
+.login-main p, .login-body label{
+    font-size: max(14px, 0.5vw);
+    color: rgb(124, 124, 126);
+
+}
+
+.new_security{
+    display: grid;
+    row-gap: 1vw;
+}
+
+#help{
+    color: #0080ff;
+}
+
+.login-body footer, .help-page footer {
+    opacity: 0.9;
+    border: none;
+    padding: 4vw;
+    position: relative;
+    z-index: 2;
+    color: rgb(124, 124, 126);
+    border-bottom: 1px solid rgb(124, 124, 126);;
+}
+
+/* Need help page */
+/* NB: some styles are for more than one page*/
+
+
+
+.help-page::after{
+    content: url(https://assets.nflxext.com/ffe/siteui/acquisition/login/login-the-crown_2-1500x1000.jpg);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: -5vw;
+    background: linear-gradient(180deg, rgba(3, 1, 12, 0.63) 70%, rgba(6, 5, 4, 0.89) 82%);
+    overflow: hidden;
+    color: #ffff;
+    z-index: -2;
+}
+
+
+.help-container, .find-container{
+    background-color: #ffff;
+    color: rgb(0, 0, 0);
+    position: relative;
+    z-index: 2;
+    width: clamp(min(280px, 100vw), 30vw, 600px);
+    padding: max(15px, 4vw) 3vw;
+    margin:auto;
+    display: grid;
+    row-gap: max(10px, 2vw);
+}
+
+.help-page .header-btn button, .find-account-page .header-btn button{
+    background-color: inherit;
+    color: red;
+    font-weight: 700;
+    width: fit-content;
+    padding: 0px;
+
+}
+
+.help-page .header-btn a:hover, .find-account-page .header-btn a:hover{
+    border-bottom: 1px solid red !important;
+}
+
+h3{
+    font-size: max(26px, 2.5vw);
+    font-weight: 400;
+    margin-bottom: max(10px, 1vw);
+}
+
+.help-container p, .help-container a{
+    font-size: max(17px, 0.6vw);
+
+}
+
+.help-container input[type=email], .find-container label, .find-container input, #email-me{
+    width: 100%;
+    height: max(20px, 4vw);
+}
+
+#email-me{
+    background-color: #0080ff;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-size: max(20px, 1.8vw);
+}
+
+#email-me:hover{
+    border-radius: 0px;
+    border: none;
+    background-color: #208af4;
+}
+
+.help-container a{
+    color: #0080ff;;
+}
+
+.help-container a:hover{
+    border-bottom: 1.5px solid #0080ff;
+}
+
+
+
+/* Find-account-page */
+/* NB: some styles are for more than one page*/
+
+.find-account-page{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/login/login-the-crown_2-1500x1000.jpg);
+    background-position: center;
+}
+
+#find-acct, #cancel-find{
+    width: 25% !important;
+    float: left;
+    height: max(20px, 3vw);
+    border-radius: 1px;
+}
+
+#find-acct{
+    background-color: #5e91c4;   
+    border: none;
+    margin-right: max(10px, 1vw);
+    box-shadow: 0px 1px 2px -1px rgba(0,0,0,0.75);
+}
+
+#cancel-find{
+    background-color: #e4e1e1;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+#cancel-find:hover{
+    background-color: #eceaea;
+
+}
+
+.reCAPTCHA-container{
+    width: clamp(min(300px, 100vw), 36vw, 650px);
+    margin: auto;
+    padding-top: 1vw;
+}
+.reCAPTCHA-container p, .reCAPTCHA-container a{
+    font-size: max(16.5px, 1.0vw) !important;
+    color: rgb(124, 124, 126);
+}
+
+.reCAPTCHA-container a{
+    border-bottom: 1px solid rgb(124, 124, 126);
+}
+
+.find-account-page main{
+    padding-bottom: 3vw;
+}
+
+.find-account-page footer{
+    border: none;
+    border-bottom: 4vw solid #ffff;
+    padding-bottom: 3vw;
+}
+
+
+@media screen and (max-width: 768px) {
+    .section-one, .section-two, .section-three, .section-four{
+        grid-template-columns: 1fr;}
+
+        ul{
+           
+            grid-template-columns: auto auto auto;
+            column-gap: 4vw;
+        }
+
+        .fag-form{
+            width: 90vw;
+        }
+         .signup-email{
+            margin:auto;
+            width: 100%;
+        }
+
+        .fag-form{
+            display: grid;
+        }
+        .fag-form .signup-submit{
+            display: block;
+            margin: auto;
+        }
+}
+
+@media screen and (max-width: 477px) {
+    ul{
+           
+        grid-template-columns: auto auto ;
+        column-gap: 6vw;
+
+    }
+}
